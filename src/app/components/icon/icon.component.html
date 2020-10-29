@@ -1,0 +1,61 @@
+<div [ngSwitch]="type">
+  <svg
+    *ngSwitchCase="'check'"
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-circle-check"
+    width="44"
+    height="44"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="#456D6A"
+    width="30px"
+    height="30px"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <circle cx="12" cy="12" r="9" />
+    <path d="M9 12l2 2l4 -4" />
+  </svg>
+
+  <svg
+    *ngSwitchCase="'plus'"
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-plus"
+    width="44"
+    height="44"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="#F4EDED"
+    fill="none"
+    width="40px"
+    height="40px"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <line x1="12" y1="5" x2="12" y2="19" />
+    <line x1="5" y1="12" x2="19" y2="12" />
+  </svg>
+
+  <svg
+    *ngSwitchDefault
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-circle-x"
+    width="44"
+    height="44"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="#8B0000"
+    width="30px"
+    height="30px"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <circle cx="12" cy="12" r="9" />
+    <path d="M10 10l4 4m0 -4l-4 4" />
+  </svg>
+</div>

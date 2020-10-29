@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "shoppinglist-42f70": {
+      "hosting": {
+        "Angular-todo-list": [
+          "shoppinglist-42f70"
+        ]
+      }
+    }
+  }
+}

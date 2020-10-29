@@ -1,3 +1,4 @@
+import { ListService } from './services/list.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-todo-list';
+
+  constructor(private listService:ListService){
+
+  }
+
+  ngOnInit() { }
+  
 }

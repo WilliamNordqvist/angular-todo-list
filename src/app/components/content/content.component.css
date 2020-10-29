@@ -1,0 +1,24 @@
+.content-container {
+  position: relative;
+  height: 80%;
+  width: 600px;
+  background-color: #464D77;
+  border-radius:15px ;
+  -webkit-border-radius:15px ;
+  -moz-border-radius:15px ;
+  -ms-border-radius:15px ;
+  -o-border-radius:15px ;
+  overflow: scroll;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container{
+    height: 100%;
+    border-radius:0 ;
+    -webkit-border-radius:0 ;
+    -moz-border-radius:0 ;
+    -ms-border-radius:0 ;
+    -o-border-radius:0 ;
+}
+}

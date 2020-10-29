@@ -1,0 +1,40 @@
+<div class="container">
+  <h3 *ngIf="emptyList">LISTAN ÄR TOM</h3>
+  <div class="loader">
+    <div
+      *ngIf="loading"
+      class="spinner-grow text-info"
+      role="status"
+      style="width: 3rem; height: 3rem"
+    >
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <ul class="list-group" *ngIf="listArr.length >= 1 && !loading">
+    <li
+      class="list-group-item"
+      *ngFor="let item of listArr"
+      (click)="updateItem(item)"
+      [className]="
+        item.checked ? 'list-group-item li-checked' : 'list-group-item'
+      "
+    >
+      <p [className]="item.checked ? 'checked' : null">
+        {{ item.name }}
+      </p>
+      <app-icon
+        [type]="item.checked ? 'check' : 'cross'"
+        class="icon"
+      ></app-icon>
+    </li>
+  </ul>
+  <div class="flex">
+    <button
+      type="button"
+      class="btn btn-info btn-lg btn-block"
+      (click)="deleteItems()"
+    >
+      Update list
+    </button>
+  </div>
+</div>

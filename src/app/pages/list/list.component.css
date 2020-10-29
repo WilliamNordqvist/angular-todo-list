@@ -1,0 +1,47 @@
+
+
+.container {
+  margin-top: 5%;
+}
+
+li,
+.icon {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  color: #877666;
+}
+.checked {
+  text-decoration: line-through;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li-checked {
+  background: #F5F5F5;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  color: #F5F5F5;
+  text-align: center;
+}
